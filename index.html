@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-fJN1j2Q+iqo8q+Hb5K5U6D9Fgkf5+6DYYB1mSB5MfJGvnI5y+YskxJF+1yytpr8hDwnXlG4OjjOsQBQ2HtbhNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <!-- Section: Design Block -->
+<section class="">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+        </nav>
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light container-fluid w-50 p-3" style="background-color: #eee; "></nav>
+        <a class="navbar-brand" href="#">
+        <img src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+        University of Science and Technology of Southern Philippines
+        </a>
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              Welcome <br />
+              <span class="text-primary">Trail blazers</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div>
+  
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example1" class="form-control" />
+                        <label class="form-label" for="form3Example1">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" id="form3Example2" class="form-control" />
+                        <label class="form-label" for="form3Example2">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form3Example3" class="form-control" />
+                    <label class="form-label" for="form3Example3">Email address</label>
+                  </div>
+  
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form3Example4" class="form-control" />
+                    <label class="form-label" for="form3Example4">Password</label>
+                  </div>
+  
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <label class="form-check-label" for="form2Example33">
+                      Keep me logged in
+                    </label>
+                  </div>
+  
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Sign up
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+
+  </html>
